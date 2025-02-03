@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');/*Importei a fonte Poppins para o meu site*/
+/*Aqui abaixo são configurações que se aplicam a todos os elementos, mas o 
+CSS tem como preferência as últimas atribuições feitas e não as primeiras, então essas 
+tags são como "configurações iniciais" que pode alterar dps*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+/*aqui foi mais p imagem do fundo, me baseei em alguns tutoriais e algumas coisas q aprendi no curso q to fznd(Gugu falando aq) */
+body {
+    background:  url('/IMAGES/wallpaper.jpg');
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-attachment: fixed;  
+    font-family: 'Poppins', 'Arial';
+    margin: 0;
+    padding: 0;
+ }
+ 
+/*Aqui em baixo são aplicações para a minha div q transformei num header rsrs*/
+ .header{
+     background-color: #353535;
+     border-radius: 12px;
+     margin:10px;
+     display: flex;
+     justify-content: space-between; 
+     align-items: center; 
+     padding: 10px ; 
+ }
+ /*Aqui são as aplicações dos botões do header*/
+ .header ul li a {
+     text-decoration: none;
+     color: #e3e0ff;
+     position: relative;
+     font-weight: 600;
+ }
+ /*Aqui é pra a "lista", que são os botões no caso, ficar um do lado do outro*/
+ .header ul {
+     display: flex; 
+     padding: 0; 
+     margin: 0; 
+     list-style-type: none;
+ }
+ 
+ .header .botão {
+     border-radius: 6px;
+     padding: 7px;
+     margin: 5px;
+     font-size: 12px;
+ }
+ /*Aqui o r, g, b e y significam as cores em inglês(red,green e yellow)e ainda peguei as cores da logo do playstation*/
+ .r {
+     background-color: #df0024;
+ }
+ .g {
+     background-color: #00ab9f;
+ }
+ .y {
+     background-color: #d6ab00;
+ }
+
+ h1 {
+    color: aliceblue;
+    margin: 0;
+    margin-left: 10%;
+}
+/*Cards dos consoles*/
+ .card-cont{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+ }
+ .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Garante que o botão seja empurrado para baixo */
+    width: 325px;
+    background-color: #272727;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+ }
+ .card img{
+    width: 100%;
+    height: auto;
+ }
+ .card-conteudo{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Se sobrar espaço, ele vai ser preenchido por isso */
+    padding: 16px; 
+ }
+ .card-conteudo h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #2E6DB4;
+ }
+ .card-conteudo p{
+    color:#666;
+    font-size: 15px;
+    margin-bottom: 10px;
+ }
+ .card-conteudo .botão{
+    margin-top: auto; /* Empurra o botão para a parte de baixo */
+    padding: 8px 16px;
+    background-color: #df0024;
+    text-decoration: none;
+    border-radius: 4px;
+    color: aliceblue;
+ }
+  /*Aqui é pra caso a tela for menor que 768px, ela ter essas propriedades ae*/
+ @media(max-width:768px){
+    header {
+        height: 40px;  
+    }
+    p.inicial {
+       color: aliceblue;
+       margin-left: 2%;
+       width: 95%;
+       font-weight: 500;
+  
+   }
+   .botão span{
+    display: none;
+   }
+ }

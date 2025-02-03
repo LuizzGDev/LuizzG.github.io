@@ -3,7 +3,7 @@
 
 /*aqui foi mais p imagem do fundo, me baseei em alguns tutoriais e algumas coisas q aprendi no curso q to fznd(Gugu falando aq) */
 body {
-    background:  url('/IMAGES/wallpaper.jpg');
+    background:  url('wallpaper.jpg');
     background-size: cover;  
     background-position: center;  
     background-repeat: no-repeat; 

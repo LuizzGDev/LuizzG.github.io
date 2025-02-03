@@ -1,0 +1,102 @@
+/*Importação de fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*Propriedades do body*/
+body {
+    background: #181818 ;
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-attachment: fixed;  
+    font-family: 'Poppins', 'Arial';
+    margin: 0;
+    padding: 0;
+ }
+ 
+
+ .header{
+     background-color: #353535;
+     border-radius: 12px;
+     margin:10px;
+     display: flex;
+     justify-content: space-between; 
+     align-items: center; 
+     padding: 10px ; 
+ }
+ 
+ ul li a {
+     text-decoration: none;
+     color: #e3e0ff;
+     position: relative;
+     font-weight: 600;
+ }
+ 
+ .header ul {
+     display: flex; 
+     padding: 0; 
+     margin: 0; 
+     list-style-type: none;
+ }
+ 
+ .botão {
+     border-radius: 6px;
+     padding: 7px;
+     margin: 5px;
+     font-size: 12px;
+ }
+ /*Aqui o r, g, b e y significam as cores em inglês(red,green e yellow)e ainda peguei as cores da logo do playstation*/
+ .r {
+     background-color: #df0024;
+ }
+ .g {
+     background-color: #00ab9f;
+ }
+ .y {
+     background-color: #d6ab00;
+ }
+ /*aq é do titulo da pagina*/
+ h1 {
+    color: #2E6DB4  ;
+    margin: 0;
+    margin-left: 1%;
+}
+h3 {
+    color: #df0024 ;
+    margin: 0;
+    margin-left: 1%;
+}
+/*Parágrafos*/
+p {
+    color: aliceblue;
+    margin-left: 2%;
+    width: 70%;
+    font-weight: 500;
+
+}
+/*Listas de jogos e especificações*/
+.text li {
+    color: aliceblue;
+    margin-left: 2%;
+    width: 70%;
+    font-weight: 500;
+}
+
+
+ /*Aqui é pra caso a tela for menor que 768px, ela ter essas propriedades ae*/
+ @media (max-width: 768px) {
+    .botão span{
+        display: none;
+    }
+    .header {
+        height: 40px;  
+    }
+    p {
+       color: aliceblue;
+       margin-left: 2%;
+       width: 95%;
+       font-weight: 500;
+  
+   }
+  
+}
+ 
